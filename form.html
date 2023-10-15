@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="img-container">
+            <div class="logo-container">
+                <img src="images/odin-lined.png" alt="odin-logo">
+                <span>ODIN</span>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="info">
+               <p>This is not a real online service. You know you need something like this in your life to help you realize your deepest dreams. Sign up to get started.</p><br>
+               <p>You <em>know</em> you want to!</p>
+            </div>
+            <div class="form-area">
+                <header>Lets do this!</header>
+                <form class="form-wrapper" action="#" method="get">
+                    <div class="form-row">
+                        <label for="firstname" class="label-block">First Name</label>
+                        <input id="firstname" class="input-block" type="text">
+                    </div>
+                    <div class="form-row">
+                        <label for="lastname" class="label-block">Last Name</label>
+                        <input id="lastname" type="text" class="input-block">
+                    </div>
+                    <div class="form-row">
+                        <label for="email" class="label-block">Email</label>
+                        <input id="email" type="email" class="input-block">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone" class="label-block">Phone Number</label>
+                        <input id="phone" type="number" min="10" max="10" class="input-block">
+                    </div>
+                    <div class="form-row">
+                        <label for="password" class="label-block">Password</label>
+                        <input id="password" type="password" class="input-block">
+                    </div>
+                    <div class="form-row">
+                        <label for="confirm-password" class="label-block">Confirm Password</label>
+                        <input id="confirm-password" type="password" class="input-block">
+                    </div>
+                </form>
+            </div>
+            <div class="button-area">
+                <button type="submit">Create Acount</button>
+                <p>Already have an account? <a href="#">Sign in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

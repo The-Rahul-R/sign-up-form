@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea,
+select{
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input:focus{
+ outline: none;
+ border: 2px solid blue;
+}
+
+@font-face {
+    font-family: 'CustomFont'; /* Name of your custom font */
+    src: url('fonts/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body, html {
+    height: 100%; 
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+}
+
+/* left side */
+.img-container {
+    position: relative;
+    min-width: 38%;
+    min-height: 100%;
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+}
+.logo-container {
+    width: 100%;
+    min-height: 150px;
+    position: absolute;
+    top: 200px;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-family: 'CustomFont' ;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.logo-container img {
+    height: 150px;
+}
+
+/* right side */
+.form-container {
+    background-color: #F9FAFB;
+}
+.form-area {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }  
+.form-container .info {
+    margin-top: 100px;
+    font-size: 28px;
+    font-weight: bolder;
+    padding: 40px
+}
+.form-container .form-area {
+    padding: 20px 40px;
+    height: 33.33%;
+    background-color: white;
+}
+.form-area header{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.label-block,.input-block {
+    display: block;
+}
+label{
+    font-size: 15px;
+    font-weight: 600;
+    color: #3B4450;
+}
+.form-row{
+    margin: 10px;
+    min-width: 300px
+}
+.button-area{
+    padding: 20px 40px;
+}
+.button-area p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.button-area p a{
+    color: red;
+    text-decoration: none;
+}
+button {
+    height: 50px;
+    width: 250px;
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
